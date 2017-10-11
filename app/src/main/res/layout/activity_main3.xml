@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mivanzhang.collapsingtoolbarlayoutdemo.MyFriendsListPullToRefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<include-->
+        <!--layout="@layout/header"/>-->
+        <com.example.mivanzhang.collapsingtoolbarlayoutdemo.HeaderView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:expanded="false"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</com.example.mivanzhang.collapsingtoolbarlayoutdemo.MyFriendsListPullToRefreshLinearLayout>

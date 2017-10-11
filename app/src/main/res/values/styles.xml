@@ -1,0 +1,49 @@
+<resources>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Theme.AppCompat.Light.NoActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 导航栏底色 -->
+        <item name="colorPrimary">@color/accent_material_dark</item>
+        <!-- 状态栏底色-->
+        <!--<item name="colorPrimaryDark">@color/accent_material_light</item>-->
+        <!-- 导航栏上的标题颜色 -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!-- Activity窗口的颜色 -->
+        <item name="android:windowBackground">@color/material_blue_grey_800</item>
+        <!-- 按钮选中或者点击获得焦点后的颜色 -->
+        <item name="colorAccent">#00ff00</item>
+        <!-- 和 colorAccent相反，正常状态下按钮的颜色 -->
+        <item name="colorControlNormal">#ff0000</item>
+        <!-- Button按钮正常状态颜色 -->
+        <item name="colorButtonNormal">@color/accent_material_light</item>
+        <!-- EditText 输入框中字体的颜色 -->
+        <item name="editTextColor">@android:color/darker_gray</item>
+        <item name="android:actionBarStyle">@style/ClubToolbar</item>
+        <item name="actionBarStyle">@style/ClubToolbar</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check</item>
+    </style>
+
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+    </style>
+
+
+    <declare-styleable name="NoDefaultPaddingTextView">
+        <attr name="nopadding_text_color" format="color" />
+        <attr name="nopadding_text_size" format="dimension" />
+        <attr name="nopadding_text" format="string|reference" />
+    </declare-styleable>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
+
+

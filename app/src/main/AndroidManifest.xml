@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mivanzhang.collapsingtoolbarlayoutdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.mivanzhang.collapsingtoolbarlayoutdemo.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:process="com.process"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mivanzhang.collapsingtoolbarlayoutdemo.Main4Activity"
+            android:label="@string/title_activity_main4"
+            android:process="com.sankuai.meituan.mei2tuan"
+            android:theme="@style/AppTheme"></activity>
+
+        <service
+            android:name="com.example.mivanzhang.collapsingtoolbarlayoutdemo.AIDLService"
+            android:process="com.process.process_aidl">
+
+            <intent-filter>
+                <action android:name="action.hfs"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
